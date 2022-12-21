@@ -72,6 +72,8 @@ label {
 }
 textarea {
   margin-right: 30px;
+  width: 60%;
+  height: 100px;
 }
 
 .card {
