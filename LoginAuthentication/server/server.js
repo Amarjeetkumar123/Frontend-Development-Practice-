@@ -46,7 +46,7 @@ app.post("/login", async (req, res) => {
   
   const { email, password } = req.body;
 
-  await User.findOne({ email: email }, (err, data) => {
+   User.findOne({ email: email }, (err, data) => {
 
     if (data) {
       if (password === data.password) {

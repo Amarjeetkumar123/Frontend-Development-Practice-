@@ -21,9 +21,10 @@ const Login = (props) => {
   }
 
   const handleLogin = () => {
-    axios.post("http://localhost:3000/login", user)
+    axios.post("http://localhost:5000/login", user)
       .then(res => {
         alert(res.data.message)
+        console.log(res.data.user);
         setLoginUser(res.data.user);
         window.location.replace("/");
     })

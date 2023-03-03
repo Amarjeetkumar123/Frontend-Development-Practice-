@@ -20,7 +20,7 @@ const Signup = () => {
   const handleSignup = () => {
     const { name, email, password, confirmPassword } = users;
     if (name && email && password && password === confirmPassword) {
-      axios.post("http://localhost:3000/signup", users).then((res) => {
+      axios.post("http://localhost:5000/signup", users).then((res) => {
         alert(res.data.message);
        window.location.replace("/login");
       });
